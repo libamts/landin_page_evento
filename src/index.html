@@ -3,11 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/main.scss">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700:900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Aniversário</title>
 </head>
 <body>
     <header class="hero">
-        <h2>Foda!</h2>
+        <div class="container">
+            <h2 class="hero__title">
+                Happy Birthday!! <br> Meus XX Anos <br>
+            </h2>
+            <h2 class="hero__title hero__title--mano">
+                O evento ocorrerá em: <br>
+                <span id="contador"></span>
+            </h2>
+            <div class="infosbar">
+                <p class="infosbar__text">
+                    <b>Localização:</b> <br>
+                    Rua Cristovão Sé de Sá, Nº 187, cep: 0000-0001, São Paulo - SP
+                </p>
+                <p class="infosbar__text">
+                    <b>Quando:</b> <br>
+                    31/02/2022 às 19h
+                </p>
+                <button class="infosbar__button" type="submit">Resgitrar presença</button>
+            </div>
+        </div>
     </header>
+    <section class="section section--firstSection"> 
+        <div class="container" data-aos="fade-left">
+            <img class="section__img" src="/src/images/SãodeJoigos.jpg" alt="">
+            <div class="section__details">
+                <h3 class="section__details__title">Salão de jogos</h3>
+                <p class="section__details__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque dolores accusamus provident placeat illo sapiente mollitia voluptate repudiandae reiciendis aperiam. Vitae, consectetur.</p>    
+            </div>
+        </div>
+    </section>
+    <section class="section section--secondSection"> 
+        <div class="container" data-aos="fade-right">
+            <img class="section__img"  src="/src/images/piscina.jpg" alt="">
+            <div class="section__details">
+                <h3 class="section__details__title">Piscina</h3>
+                <p class="section__details__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque dolores accusamus provident placeat illo sapiente mollitia voluptate repudiandae reiciendis aperiam. Vitae, consectetur.</p>    
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="/src/scripts/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,53 @@
+@use '/src/styles/variables';
+
+.section{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    
+    
+    
+    &--firstSection{
+        background-image: linear-gradient(variables.$firstSectionColor , variables.$SecondSectionColor 60%);
+    }
+
+    &--secondSection{
+        background-image: linear-gradient(variables.$SecondSectionColor 40%  ,variables.$firstSectionColor);
+    }
+
+    .container{
+        display: flex;
+        gap: 40px;
+    }
+
+    &__img{
+        max-width: 460px;
+        width: 100%;
+    }
+
+    &__details{
+
+        &__title{
+            margin-bottom: 16px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        &__text{
+            line-height: 24px;
+            
+        }
+    }
+
+    @media (max-width: 640px){
+        .container{
+            display: block;
+            max-width: 70%;
+            
+        }
+        &__details{
+            margin-top: 24px;
+        }
+
+    }
+
+}
